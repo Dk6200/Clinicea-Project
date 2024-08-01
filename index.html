@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clinicea</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="mainbg">
+    <!-- Navbar-Start -->
+    <nav class="navbar navbar-expand-md bg-light fs-6">
+      <a class="navbar-brand" href="#">
+        <img
+          src="./clinicea-dark.jpg"
+          alt="Clinicea Logo"
+          class="img-fluid px-2"
+          style="width: 40px; height: auto"
+        />
+      </a>
+
+      <!-- Navbar toggler for small screens -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a href="#" class="nav-link mx-3 fw-bold">Samples</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link mx-3 fw-bold">Documents</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link mx-3 fw-bold">Reports</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle fw-bold d-flex align-items-center"
+              href="#"
+              id="profileDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="./doctor-png.webp"
+                alt="Profile"
+                class="rounded-circle border-custom me-2 pdim"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar-End -->
+
+    <!-- Main-Body -->
+    <div class="container-fluid">
+      <!-- SearchBar-Start-->
+
+      <div class="d-flex justify-content-center align-items-center py-1 px-2">
+        <input
+          type="text"
+          placeholder="Search Samples"
+          class="form-control py-2 w-25 mt-2 rounded"
+        />
+        <button class="btn btn-warning ms-5 rounded-pill mt-2 py-2 px-4">
+          + New Sample
+        </button>
+      </div>
+
+      <!-- SearchBar-End-->
+
+      <!-- Body-Start-->
+      <div class="Container d-flex vh-100 mt-3">
+        <!-- List-1 Start-->
+        <div class="row justify-content-center">
+          <div
+            class="w-auto h-75 mr-3 me-md-3 mx-sm-auto mb-md-3 md-sm-3 rounded list1bg py-3 fw-bold fs-0 rounded custom-shadow col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+          >
+            <div class="w-100 border-bottom border-dark border-2">
+              <p class="mb-1 px-4">List-1</p>
+            </div>
+            <div class="custom-scrollbar h-75 list1bg rounded custom-shadow">
+              <div class="container mt-3">
+                <div class="card custom-card p-2">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-start">
+                        <p class="fst-normal custom-font-size mb-0">
+                          #08121-5 Sarah Jones
+                        </p>
+                        <span class="text-muted ms-1 custom-font-size"
+                          >36F</span
+                        >
+                      </div>
+                      <p class="mb-1 fw-lighter">
+                        Lot 1
+                        <span class="badge bg-danger text-light">Blood</span>
+                      </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./id-card.png"
+                          alt="ID card icon"
+                          class="me-2"
+                          style="width: 16px; height: 16px"
+                        />
+                        <small class="fw-lighter">HC on 2024/07/16 (1w)</small>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./barcode.png"
+                        alt="QR Code"
+                        class="barcodedim ms-3"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-link p-0"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="bi bi-three-dots-vertical text-muted"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- List-1 End-->
+
+          <!-- List-2 Start-->
+          <div
+            class="w-auto h-75 me-md-3 mx-sm-auto mb-md-3 md-sm-3 rounded list2bg py-3 fw-bold fs-0 rounded custom-shadow2 col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+          >
+            <div class="w-100 border-bottom border-dark border-2">
+              <p class="mb-1 px-4">List-2</p>
+            </div>
+            <div class="custom-scrollbar h-75 list2bg rounded custom-shadow2">
+              <div class="container mt-3">
+                <div class="card custom-card p-2">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-start">
+                        <p class="fst-normal custom-font-size mb-0">
+                          #08021-5 John Alpens
+                        </p>
+                        <span class="text-muted ms-1 custom-font-size"
+                          >42M</span
+                        >
+                      </div>
+                      <p class="mb-1 fw-lighter">
+                        Lot 1
+                        <span class="badge bg-secondary">Tissue</span>
+                      </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./id-card.png"
+                          alt="ID card icon"
+                          class="me-2"
+                          style="width: 16px; height: 16px"
+                        />
+                        <small class="fw-lighter">HC on 2024/07/06 (3w)</small>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./barcode.png"
+                        alt="QR Code"
+                        class="barcodedim ms-3"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-link p-0"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="bi bi-three-dots-vertical text-muted"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- List-2 End-->
+
+          <!-- List-3 Start-->
+
+          <div
+            class="w-auto h-75 me-md-3 mb-3 mx-sm-auto mb-md-3 md-sm-3 rounded list3bg py-3 fw-bold fs-0 rounded custom-shadow3 col-12 col-sm-6 col-md-4 col-lg-3"
+          >
+            <div class="w-100 border-bottom border-dark border-2">
+              <p class="mb-1 px-4">List-3</p>
+            </div>
+            <div
+              class="custom-scrollbar custom-height-533 list3bg rounded custom-shadow3"
+            >
+              <div class="container mt-3">
+                <div class="card custom-card p-2">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-start">
+                        <p class="fst-normal custom-font-size mb-0">
+                          #08121-5 Sarah Jones
+                        </p>
+                        <span class="text-muted ms-1 custom-font-size"
+                          >36F</span
+                        >
+                      </div>
+                      <p class="mb-1 fw-lighter">
+                        Lot 1
+                        <span class="badge bg-danger text-light">Blood</span>
+                      </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./id-card.png"
+                          alt="ID card icon"
+                          class="me-2"
+                          style="width: 16px; height: 16px"
+                        />
+                        <small class="fw-lighter">HC on 2024/07/16 (3w)</small>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./barcode.png"
+                        alt="QR Code"
+                        class="barcodedim ms-3"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-link p-0"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="bi bi-three-dots-vertical text-muted"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container mt-3">
+                <div class="card custom-card p-2">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-start">
+                        <p class="fst-normal custom-font-size mb-0">
+                          #08121-5 Sarah Jones
+                        </p>
+                        <span class="text-muted ms-1 custom-font-size"
+                          >36F</span
+                        >
+                      </div>
+                      <p class="mb-1 fw-lighter">
+                        Lot 2
+                        <span class="badge bg-danger text-light">Blood</span>
+                      </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./id-card.png"
+                          alt="ID card icon"
+                          class="me-2"
+                          style="width: 16px; height: 16px"
+                        />
+                        <small class="fw-lighter">HC on 2024/07/16 (3w)</small>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./barcode.png"
+                        alt="QR Code"
+                        class="barcodedim ms-3"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-link p-0"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="bi bi-three-dots-vertical text-muted"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container mt-3">
+                <div class="card custom-card p-2">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-start">
+                        <p class="fst-normal custom-font-size mb-0">
+                          #08121-5 Sarah Jones
+                        </p>
+                        <span class="text-muted ms-1 custom-font-size"
+                          >36F</span
+                        >
+                      </div>
+                      <p class="mb-1 fw-lighter">
+                        Lot 3
+                        <span class="badge bg-danger text-light">Blood</span>
+                      </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./id-card.png"
+                          alt="ID card icon"
+                          class="me-2"
+                          style="width: 16px; height: 16px"
+                        />
+                        <small class="fw-lighter">HC on 2024/07/16 (3w)</small>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./barcode.png"
+                        alt="QR Code"
+                        class="barcodedim ms-3"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-link p-0"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="bi bi-three-dots-vertical text-muted"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container mt-3">
+                <div class="card custom-card p-2">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-start">
+                        <p class="fst-normal custom-font-size mb-0">
+                          #08021-5 John Alpens
+                        </p>
+                        <span class="text-muted ms-1 custom-font-size"
+                          >42M</span
+                        >
+                      </div>
+                      <p class="mb-1 fw-lighter">
+                        Lot 1
+                        <span class="badge bg-secondary">Tissue</span>
+                      </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./id-card.png"
+                          alt="ID card icon"
+                          class="me-2"
+                          style="width: 16px; height: 16px"
+                        />
+                        <small class="fw-lighter">HC on 2024/07/06 (3w)</small>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./barcode.png"
+                        alt="QR Code"
+                        class="barcodedim ms-3"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-link p-0"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="bi bi-three-dots-vertical text-muted"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container mt-3">
+                <div class="card custom-card p-2">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-start">
+                        <p class="fst-normal custom-font-size mb-0">
+                          #05621 Kirten Rock
+                        </p>
+                        <span class="text-muted ms-1 custom-font-size"
+                          >42M</span
+                        >
+                      </div>
+                      <p class="mb-1 fw-lighter">
+                        Lot 1
+                        <span class="badge list4bg text-light">Stemcell</span>
+                      </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./id-card.png"
+                          alt="ID card icon"
+                          class="me-2"
+                          style="width: 16px; height: 16px"
+                        />
+                        <small class="fw-lighter">HC on 2024/07/06 (3w)</small>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./barcode.png"
+                        alt="QR Code"
+                        class="barcodedim ms-3"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-link p-0"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="bi bi-three-dots-vertical text-muted"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container mt-3">
+                <div class="card custom-card p-2">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-start">
+                        <p class="fst-normal custom-font-size mb-0">
+                          #08121-5 Sarah Jones
+                        </p>
+                        <span class="text-muted ms-1 custom-font-size"
+                          >36F</span
+                        >
+                      </div>
+                      <p class="mb-1 fw-lighter">
+                        Lot 4
+                        <span class="badge bg-danger text-light">Blood</span>
+                      </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./id-card.png"
+                          alt="ID card icon"
+                          class="me-2"
+                          style="width: 16px; height: 16px"
+                        />
+                        <small class="fw-lighter">HC on 2024/07/06 (3w)</small>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./barcode.png"
+                        alt="QR Code"
+                        class="barcodedim ms-3"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-link p-0"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="bi bi-three-dots-vertical text-muted"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- List-3 End-->
+
+          <!-- List-4 Start-->
+
+          <div
+            class="w-auto h-75 me-md-3 rounded mx-sm-auto mb-md-3 md-sm-3 list4bg py-3 fw-bold fs-0 rounded custom-shadow4 col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+          >
+            <div class="w-100 border-bottom border-dark border-2">
+              <p class="mb-1 px-4">List-4</p>
+            </div>
+            <div class="custom-scrollbar h-75 list4bg rounded custom-shadow4">
+              <div class="container mt-3">
+                <div class="card custom-card p-2">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-start">
+                        <p class="fst-normal custom-font-size mb-0">
+                          #08021-3 John Alpens
+                        </p>
+                        <span class="text-muted ms-1 custom-font-size"
+                          >42M</span
+                        >
+                      </div>
+                      <p class="mb-1 fw-lighter">
+                        Lot 3
+                        <span class="badge bg-secondary text-light"
+                          >Tissue</span
+                        >
+                      </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./id-card.png"
+                          alt="ID card icon"
+                          class="me-2"
+                          style="width: 16px; height: 16px"
+                        />
+                        <small class="fw-lighter">HC on 2024/07/06 (3w)</small>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./barcode.png"
+                        alt="QR Code"
+                        class="barcodedim ms-3"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-link p-0"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="bi bi-three-dots-vertical text-muted"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container mt-3">
+                <div class="card custom-card p-2">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-start">
+                        <p class="fst-normal custom-font-size mb-0">
+                          #08121-5 Luin Chin
+                        </p>
+                        <span class="text-muted ms-1 custom-font-size"
+                          >42M</span
+                        >
+                      </div>
+                      <p class="mb-1 fw-lighter">
+                        Lot 1
+                        <span class="badge bg-danger text-light">Blood</span>
+                      </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./id-card.png"
+                          alt="ID card icon"
+                          class="me-2"
+                          style="width: 16px; height: 16px"
+                        />
+                        <small class="fw-lighter">HC on 2024/07/06 (3w)</small>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./barcode.png"
+                        alt="QR Code"
+                        class="barcodedim ms-3"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-link p-0"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="bi bi-three-dots-vertical text-muted"></i>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action 1</a></li>
+                        <li><a class="dropdown-item" href="#">Action 2</a></li>
+                        <li><a class="dropdown-item" href="#">Action 3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- List-4 End-->
+
+          <!-- List-5 Start-->
+          <div
+            class="w-auto h-75 me-md-3 rounded mx-sm-auto mb-md-3 md-sm-3 list5bg py-3 fw-bold fs-0 rounded custom-shadow5 col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
+          >
+            <div class="w-100 border-bottom border-dark border-2">
+              <p class="mb-1 px-4">List-5</p>
+            </div>
+            <div class="custom-scrollbar h-75 list5bg rounded custom-shadow5">
+              <div class="container mt-3">
+                <div class="card custom-card p-2">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-start">
+                        <p class="fst-normal custom-font-size mb-0">
+                          #08121-5 Sarah Jones
+                        </p>
+                        <span class="text-muted ms-1 custom-font-size"
+                          >36F</span
+                        >
+                      </div>
+                      <p class="mb-1 fw-lighter">
+                        Lot 1
+                        <span class="badge bg-danger text-light">Blood</span>
+                      </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./id-card.png"
+                          alt="ID card icon"
+                          class="me-2"
+                          style="width: 16px; height: 16px"
+                        />
+                        <small class="fw-lighter">HC on 2024/07/06 (3w)</small>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./barcode.png"
+                        alt="QR Code"
+                        class="barcodedim ms-3"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-link p-0"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="bi bi-three-dots-vertical text-muted"></i>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action 1</a></li>
+                        <li><a class="dropdown-item" href="#">Action 2</a></li>
+                        <li><a class="dropdown-item" href="#">Action 3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container mt-3">
+                <div class="card custom-card p-2">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-start">
+                        <p class="fst-normal custom-font-size mb-0">
+                          #08121-5 Sarah Jones
+                        </p>
+                        <span class="text-muted ms-1 custom-font-size"
+                          >36F</span
+                        >
+                      </div>
+                      <p class="mb-1 fw-lighter">
+                        Lot 1
+                        <span class="badge bg-danger text-light">Blood</span>
+                      </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./id-card.png"
+                          alt="ID card icon"
+                          class="me-2"
+                          style="width: 16px; height: 16px"
+                        />
+                        <small class="fw-lighter">HC on 2024/07/06 (3w)</small>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./barcode.png"
+                        alt="QR Code"
+                        class="barcodedim ms-3"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-link p-0"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="bi bi-three-dots-vertical text-muted"></i>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action 1</a></li>
+                        <li><a class="dropdown-item" href="#">Action 2</a></li>
+                        <li><a class="dropdown-item" href="#">Action 3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container mt-3">
+                <div class="card custom-card p-2">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-start">
+                        <p class="fst-normal custom-font-size mb-0">
+                          #08121-5 Sarah Jones
+                        </p>
+                        <span class="text-muted ms-1 custom-font-size"
+                          >36F</span
+                        >
+                      </div>
+                      <p class="mb-1 fw-lighter">
+                        Lot 1
+                        <span class="badge bg-danger text-light">Blood</span>
+                      </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./id-card.png"
+                          alt="ID card icon"
+                          class="me-2"
+                          style="width: 16px; height: 16px"
+                        />
+                        <small class="fw-lighter">HC on 2024/07/06 (3w)</small>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./barcode.png"
+                        alt="QR Code"
+                        class="barcodedim ms-3"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-link p-0"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="bi bi-three-dots-vertical text-muted"></i>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action 1</a></li>
+                        <li><a class="dropdown-item" href="#">Action 2</a></li>
+                        <li><a class="dropdown-item" href="#">Action 3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- List-5 End-->
+        </div>
+
+        <!-- Body-End-->
+      </div>
+    </div>
+    <!-- Main-BodyEnd -->
+  </body>
+</html>
