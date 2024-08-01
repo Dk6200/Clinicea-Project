@@ -103,7 +103,7 @@
   scrollbar-width: thin;
 }
 body {
-  overflow: hidden;
+  overflow: auto;
 }
 .custom-font-size {
   font-size: small;
