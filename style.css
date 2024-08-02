@@ -23,6 +23,8 @@
 }
 .custom-card {
   background-color: #ffe9d6; /* Light peach background */
+  height: 120px !important;
+  margin-bottom: 10px;
 }
 .list1bg {
   background-color: #b0d4ff;
@@ -104,13 +106,31 @@
 }
 body {
   overflow: auto;
+  overflow-x: scroll;
+  width: max-content;
 }
 .custom-font-size {
-  font-size: small;
+  font-size: 20px;
+  padding: 5px 0px;
 }
 .custom-height-533 {
-  height: 533px;
+  height: 750px;
 }
 .custom-height-597 {
-  height: 597px;
+  height: 800px;
+}
+
+.custom-width-380 {
+  width: 380px;
+}
+
+.scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  height: 100vh;
+}
+.scroll-item {
+  display: inline-block;
+  min-width: 550px; /* Adjust min-width as needed */
+  margin-right: 15px;
 }
