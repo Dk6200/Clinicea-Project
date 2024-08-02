@@ -105,10 +105,15 @@
   scrollbar-width: thin;
 }
 body {
-  overflow: auto;
-  overflow-x: scroll;
+  overflow: hide;
+  /* overflow-x: scroll; */
   width: max-content;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
 .custom-font-size {
   font-size: 20px;
   padding: 5px 0px;
@@ -125,10 +130,17 @@ body {
 }
 
 .scroll-container {
-  overflow-x: auto;
+  /* overflow-x: auto; */
   white-space: nowrap;
   height: 100vh;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
 .scroll-item {
   display: inline-block;
   min-width: 550px; /* Adjust min-width as needed */
